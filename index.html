@@ -12,7 +12,7 @@
     <!-- goole font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
 
     <!-- daisyui & tailwind -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css" rel="stylesheet" type="text/css" />
@@ -23,6 +23,9 @@
             extend: {
               colors: {
                 clifford: '#da373d',
+                "manu": '#ffffff',
+                "baner": '#fffbf0', 
+                "button": '#9cb43a', 
               }
             }
           }
@@ -30,42 +33,41 @@
       </script>
            
       <style>
-         .marriweather{
-            font-family: "Merriweather", serif;
+         .Bebas-Neue{
+            font-family: "Bebas Neue", serif;
         }
       </style>
 
     
 </head>
-<body class="marriweather">
-    <header class="header">
+<body class="Bebas-Neue">
+    <header class="bg-baner">
         <!-- navbar section -->
-        <nav class="nav-bar">
-            <div class="nav-img">
+        <nav class="flex justify-between items-center sm:px-24 sm:py-10 px-5 pt-16 pb-5">
+            <div class="sm:w-72 w-40">
                 <img src="icons/logo.png" alt="">
             </div>
             <div>
-                <ul class="nav-manu">
-                    <li><a href="">Home</a></li>
-                    <li><a href="">Product</a></li>
-                    <li><a href="">About Us</a></li>
-                    <li><a href="">Contact Us</a></li>
+                <ul class="sm:flex hidden">
+                    <li class="mx-4 text-gray-500"><a href="">Home</a></li>
+                    <li class="mx-4 text-gray-500"><a href="">Product</a></li>
+                    <li class="mx-4 text-gray-500"><a href="">About Us</a></li>
+                    <li class="mx-4 text-gray-500"><a href="">Contact Us</a></li>
                 </ul>
-                <ion-icon name="menu" class="menu"></ion-icon>
+                <ion-icon name="menu" class="sm:hidden block bg-manu p-2 rounded-full text-xl"></ion-icon>
             </div>
         </nav>
         
         <!-- baner section -->
-        <section class="baner">
-            <div class="baner-text">
-                <h1><span class="color-orenge">Be the Penguins</span><br>of Winter</h1>
-                <p>Lorem Ipsum is simply dummy text of the printing <br>and typesetting industry.</p>
-                <div class="buy">
-                    <button><ion-icon name="cart-outline" class="icon"></ion-icon><a href="">BUY NOW</a></button>
+        <section class="sm:flex sm:flex-row flex-col justify-between items-center sm:px-24 sm:py-10 px-5 py-8">
+            <div class="">
+                <h1 class="sm:text-8xl text-6xl"><span class="text-[#fabe4c]">Be the Penguins</span><br>of Winter</h1>
+                <p class="sm:text-base text-xs sm:py-8 py-5">Lorem Ipsum is simply dummy text of the printing <br>and typesetting industry.</p>
+                <div class="">
+                    <button class="bg-button px-10 py-2"><ion-icon name="cart-outline" class=""></ion-icon><a href="">BUY NOW</a></button>
                 </div>
-                
-               
             </div>
+
             <div class="baner-img">
                 <img src="images/model.png" alt="">
             </div>
